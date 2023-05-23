@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampHub</title>
+    <link rel="icon" href="./../../src/img/logo/logo-white.png" />
+
+    <link rel="stylesheet" href="./../../src/css/campgrounds/checkout.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="module"
+      defer
+      src="./../../src/js/controller/checkoutController.js"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <h2 class="navigation_title">
+        <a href="./../../index.html">CampHub</a>
+      </h2>
+
+      <button class="navigation_button">
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+      </button>
+
+      <nav class="navigation_overlay">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <picture>
+              <source
+                media="(min-width:1000px)"
+                srcset="./../../src/img/navigation/navigation-map.jpg"
+              />
+              <source
+                media="(min-width:400px)"
+                srcset="./../../src/img/navigation/navigation-map.webp"
+              />
+              <img src="./../../src/img/navigation/navigation-map.jpg" alt="" />
+            </picture>
+          </li>
+
+          <li class="navigation_item">
+            <div class="navigation_header">
+              <div class="navigation_header_content">
+                <div class="navigation_header_content_logo">
+                  <img src="./../../src/img/logo/logo-black.png" alt="" />
+                </div>
+                <h2 class="navigation_header_content_title">CampHub</h2>
+              </div>
+            </div>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../../index.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-home.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-home.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-home.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Home</h2>
+                <span class="navigation_link_content_text"
+                  >Welcome to CampHub</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./campgrounds.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-rooms.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-rooms.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-rooms.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Rooms</h2>
+                <span class="navigation_link_content_text"
+                  >Upper Valley & Sunset Lodge</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../authentication/login.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="
+                    ./../../src/img/navigation/navigation-authentication.png
+                  "
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="
+                    ./../../src/img/navigation/navigation-authentication.webp
+                  "
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-authentication.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Authentication</h2>
+                <span class="navigation_link_content_text"
+                  >Register or Sign in</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../membership/membership.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-account.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-account.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-account.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Membership</h2>
+                <span class="navigation_link_content_text"
+                  >Manage your account</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../guide.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-guide.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-guide.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-guide.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Guide</h2>
+                <span class="navigation_link_content_text"
+                  >Check information and FAQ</span
+                >
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header-landing">
+      <div class="landing">
+        <div class="landing_pic">
+          <picture>
+            <source
+              media="min-width:1000px"
+              srcset="./../../src/img/campgrounds/checkout/landing.webp"
+            />
+            <source
+              media="min-width:300px"
+              srcset="./../../src/img/campgrounds/checkout/landing-min.webp"
+            />
+
+            <img
+              src="./../../src/img/campgrounds/checkout/landing.webp"
+              alt=""
+            />
+          </picture>
+          <div class="landing_text">Checkout</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-steps">
+        <div class="container">
+          <div class="steps">
+            <div class="steps_step steps_step--checked">
+              <div class="steps_step_circle">
+                <i class="fa-solid fa-check"></i>
+                <div class="steps_step_line steps_step_line--checked"></div>
+              </div>
+              <div class="steps_step_text">Your selection</div>
+            </div>
+
+            <div class="steps_step">
+              <div class="steps_step_circle">
+                <div class="steps_step_line steps_step_line--checked"></div>
+                2
+                <div class="steps_step_line"></div>
+              </div>
+              <div class="steps_step_text">Your Details</div>
+            </div>
+
+            <div class="steps_step">
+              <div class="steps_step_circle">
+                <div class="steps_step_line"></div>
+                3
+              </div>
+              <div class="steps_step_text">Complete</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-information">
+        <div class="container">
+          <div class="information">
+            <div class="information_fill">
+              <div class="information_fill_content">
+                <div class="information_fill_guests">
+                  <h2 class="information_fill_header">Guests Information</h2>
+
+                  <div class="information_fill_guest">
+                    <h3 class="information_fill_guest_title">Guest 1:</h3>
+                    <div class="information_fill_guest_content">
+                      <div class="information_fill_guest_group">
+                        <label for="guest1Firstname">First name:</label>
+                        <input
+                          type="text"
+                          id="guest1Firstname"
+                          placeholder="Jacob"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest1Lastname">Last name:</label>
+                        <input
+                          type="text"
+                          id="guest1Lastname"
+                          placeholder="Hayes"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest1ID">ID or passport number:</label>
+                        <input
+                          type="text"
+                          id="guest1ID"
+                          placeholder="A012345689"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="information_fill_guest">
+                    <h3 class="information_fill_guest_title">Guest 2:</h3>
+                    <div class="information_fill_guest_content">
+                      <div class="information_fill_guest_group">
+                        <label for="guest2Firstname">First name:</label>
+                        <input
+                          type="text"
+                          id="guest2Firstname"
+                          placeholder="Jacob"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest2Lastname">Last name:</label>
+                        <input
+                          type="text"
+                          id="guest2Lastname"
+                          placeholder="Hayes"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest2ID">ID or passport number:</label>
+                        <input
+                          type="text"
+                          id="guest2ID"
+                          placeholder="A012345689"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="information_fill_guest">
+                    <h3 class="information_fill_guest_title">Guest 3:</h3>
+                    <div class="information_fill_guest_content">
+                      <div class="information_fill_guest_group">
+                        <label for="guest3Firstname">First name:</label>
+                        <input
+                          type="text"
+                          id="guest3Firstname"
+                          placeholder="Jacob"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest3Lastname">Last name:</label>
+                        <input
+                          type="text"
+                          id="guest3Lastname"
+                          placeholder="Hayes"
+                        />
+                      </div>
+
+                      <div class="information_fill_guest_group">
+                        <label for="guest3ID">ID or passport number:</label>
+                        <input
+                          type="text"
+                          id="guest3ID"
+                          placeholder="A012345689"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="information_fill_purchaser">
+                  <h2 class="information_fill_header">Purchaser Information</h2>
+
+                  <div class="information_fill_purchaser_content">
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserFirstname">First name:</label>
+                      <input
+                        type="text"
+                        id="purchaserFirstname"
+                        placeholder="Jacob"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserLastname">Last name:</label>
+                      <input
+                        type="text"
+                        id="purchaserLastname"
+                        placeholder="Hayes"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserID">ID or passport number:</label>
+                      <input
+                        type="text"
+                        id="purchaserID"
+                        placeholder="A012345689"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserEmail">Email Address:</label>
+                      <input
+                        type="text"
+                        id="purchaserEmail"
+                        placeholder="example@camphub.com"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserCountry">Country:</label>
+                      <input
+                        type="text"
+                        id="purchaserCountry"
+                        placeholder="Taiwan"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserCity">City:</label>
+                      <input
+                        type="text"
+                        id="purchaserCity"
+                        placeholder="Taipei"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserID">Stree Address:</label>
+                      <input
+                        type="text"
+                        id="purchaserID"
+                        placeholder="320, Zhongli, Fuxing Rd, No.46, 9F"
+                      />
+                    </div>
+
+                    <div class="information_fill_purchaser_group">
+                      <label for="purchaserRequest">Special Requests*:</label>
+                      <textarea id="purchaserRequest"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="information_fill_payment">
+                  <h2 class="information_fill_header">
+                    Payment <i class="fa-solid fa-lock"></i>
+                  </h2>
+
+                  <div class="information_fill_payment_content">
+                    <div class="information_fill_payment_group">
+                      <label for="purchaserCard">Credit card number:</label>
+                      <input
+                        type="text"
+                        id="purchaserCard"
+                        placeholder="0000-1111-2222-3333"
+                      />
+                    </div>
+
+                    <div class="information_fill_payment_group">
+                      <label for="expiredDate">Expiration Date:</label>
+                      <input type="text" id="expiredDate" placeholder="01/30" />
+                    </div>
+
+                    <div class="information_fill_payment_group">
+                      <label for="purchaserCode">Security Code:</label>
+                      <input type="text" id="purchaserCode" placeholder="000" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="information_fill_confirm">
+                <button class="information_fill_confirm_button">Confirm</button>
+              </div>
+            </div>
+
+            <div class="information_checkout">
+              <div class="information_checkout_header">
+                <h2 class="information_checkout_header_title">Summary</h2>
+              </div>
+              <div class="information_checkout_body">
+                <div class="information_checkout_body_items">
+                  <div class="information_checkout_body_item">
+                    <div class="information_checkout_body_item_name">
+                      Upper Valley - 499.95 USD / 5 nights
+                    </div>
+                    <div class="information_checkout_body_item_price">
+                      $1499.85
+                    </div>
+                  </div>
+
+                  <div class="information_checkout_body_item">
+                    <div class="information_checkout_body_item_name">
+                      UNP-300 Camping Dome Tent - 6.99 USD / 5 nights
+                    </div>
+                    <div class="information_checkout_body_item_price">
+                      $105.85
+                    </div>
+                  </div>
+
+                  <div class="information_checkout_body_item">
+                    <div class="information_checkout_body_item_name">
+                      VENTURE 4 Lightweight Sleeping Bag - 4.99 USD / 5 nights
+                    </div>
+                    <div class="information_checkout_body_item_price">
+                      $74.85
+                    </div>
+                  </div>
+                </div>
+                <div class="information_checkout_body_total">
+                  <div class="information_checkout_body_total_text">
+                    Subtoal:
+                  </div>
+                  <div class="information_checkout_body_total_price">
+                    $1680.55
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_logo">
+        <div class="footer_logo_pic">
+          <img src="./../../src/img/logo/logo-white.png" alt="" />
+        </div>
+        <h2 class="footer_logo_title">CampHub</h2>
+      </div>
+      <div class="footer_content">
+        <span class="footer_content_text">
+          900 Jamieson Pkwy, Cambridge, ON N3C 4N6, Canada
+        </span>
+
+        <span class="footer_content_text"> camping@camphub.com </span>
+
+        <span class="footer_content_text"> 111-222-3333 </span>
+      </div>
+      <div class="footer_copyright">&#169; Camphub.com all rights reserved</div>
+    </footer>
+  </body>
+</html>

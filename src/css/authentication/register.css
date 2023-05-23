@@ -1,0 +1,51 @@
+@import "./../base/base.css";
+@import "./../base/navigation.css";
+@import "./authemtication.css";
+
+.background-authentication {
+  background: url("../../img/authentication/register-back.png");
+}
+
+.authentication_signup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.authentication_group:nth-child(3),
+.authentication_group:nth-child(4),
+.authentication_group:nth-child(5),
+.authentication_group:nth-child(6),
+.authentication_button,
+.authentication_info {
+  grid-column: 1 / -1;
+}
+
+.authentication_group:nth-child(3),
+.authentication_group:nth-child(5),
+.authentication_group:nth-child(6) {
+  width: 60%;
+}
+
+.authentication_group:nth-child(4) {
+  width: 80%;
+}
+
+.authentication_button {
+  margin-top: 10px;
+}
+
+.authentication_info {
+  width: fit-content;
+  border-bottom: none;
+}
+
+@media (min-width: 1600px) {
+  .authentication_signup {
+    column-gap: 30px;
+  }
+
+  .authentication_group {
+    margin-bottom: 20px;
+  }
+}

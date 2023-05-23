@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampHub</title>
+    <link rel="icon" href="./../../src/img/logo/logo-white.png" />
+
+    <link rel="stylesheet" href="./../../src/css/authentication/register.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="module"
+      defer
+      src="./../../src/js/controller/authentication/signupController.js"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation navigation--short">
+      <button class="navigation_button">
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+      </button>
+
+      <nav class="navigation_overlay">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <picture>
+              <source
+                media="(min-width:1000px)"
+                srcset="./../../src/img/navigation/navigation-map.jpg"
+              />
+              <source
+                media="(min-width:400px)"
+                srcset="./../../src/img/navigation/navigation-map.webp"
+              />
+              <img src="./../../src/img/navigation/navigation-map.jpg" alt="" />
+            </picture>
+          </li>
+
+          <li class="navigation_item">
+            <div class="navigation_header">
+              <div class="navigation_header_content">
+                <div class="navigation_header_content_logo">
+                  <img src="./../../src/img/logo/logo-black.png" alt="" />
+                </div>
+                <h2 class="navigation_header_content_title">CampHub</h2>
+              </div>
+            </div>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../../index.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-home.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-home.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-home.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Home</h2>
+                <span class="navigation_link_content_text"
+                  >Welcome to CampHub</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../campgrounds/campgrounds.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-rooms.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-rooms.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-rooms.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Rooms</h2>
+                <span class="navigation_link_content_text"
+                  >Upper Valley & Sunset Lodge</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./login.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="
+                    ./../../src/img/navigation/navigation-authentication.png
+                  "
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="
+                    ./../../src/img/navigation/navigation-authentication.webp
+                  "
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-authentication.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Authentication</h2>
+                <span class="navigation_link_content_text"
+                  >Register or Sign in</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./../membership/membership.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-account.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-account.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-account.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Membership</h2>
+                <span class="navigation_link_content_text"
+                  >Manage your account</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="../guide.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./../../src/img/navigation/navigation-guide.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./../../src/img/navigation/navigation-guide.webp"
+                />
+                <img
+                  src="./../../src/img/navigation/navigation-guide.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Guide</h2>
+                <span class="navigation_link_content_text"
+                  >Check information and FAQ</span
+                >
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="background-authentication">
+      <div class="authentication">
+        <div class="authentication_pic">
+          <picture>
+            <source
+              media="(min-width:1000px)"
+              srcset="./../../src/img/authentication/register-main.png"
+            />
+            <source
+              media="(min-width:300px)"
+              srcset="./../../src/img/authentication/register-main.webp"
+            />
+            <img
+              src="./../../src/img/authentication/register-main.png"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="authentication_content">
+          <div class="authentication_header">
+            <h2 class="authentication_header_title">
+              Welcome to <span>CampHub</span>
+              <span>Join us, being a Camper</span>
+            </h2>
+          </div>
+          <div class="authentication_body">
+            <div class="authentication_signup">
+              <div class="authentication_group">
+                <label for="firstname">First name:</label>
+                <input type="firstname" id="firstname" />
+              </div>
+
+              <div class="authentication_group">
+                <label for="lastname">Last name:</label>
+                <input type="lastname" id="lastname" />
+              </div>
+
+              <div class="authentication_group">
+                <label for="username">Username:</label>
+                <input type="username" id="username" />
+              </div>
+
+              <div class="authentication_group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" />
+              </div>
+
+              <div class="authentication_group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" />
+              </div>
+
+              <div class="authentication_group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" />
+              </div>
+
+              <div class="authentication_button">
+                <button>Sign Up</button>
+              </div>
+
+              <div class="authentication_info">
+                <span>Already have an account?</span>
+                <a href="./login.html"
+                  >Sign in NOW <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

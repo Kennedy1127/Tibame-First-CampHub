@@ -1,0 +1,78 @@
+@keyframes section-bottom-to-top {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Home */
+@keyframes card-title-move-down {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes card-img-opacity {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes curtain-left {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-63%) rotate(30deg);
+  }
+}
+
+@keyframes curtain-right {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+
+  100% {
+    transform: translateX(63%) rotate(-30deg);
+  }
+}
+
+@keyframes drive-car {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes bouncing-car {
+  0% {
+    bottom: 3.8%;
+  }
+
+  100% {
+    bottom: 3%;
+  }
+}
+
+/* Home */

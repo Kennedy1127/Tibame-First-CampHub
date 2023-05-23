@@ -1,0 +1,95 @@
+.footer {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../img/footer/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_logo {
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+.footer_logo_pic {
+  width: 250px;
+  height: 250px;
+}
+
+.footer_logo_title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer_content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.footer_content_text {
+  max-width: 250px;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+
+  position: relative;
+}
+
+.footer_content_text::after {
+  content: "";
+  width: 10%;
+  height: 1.5px;
+  background-color: #fff;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_copyright {
+  width: 100%;
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: var(--color-green-1);
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* RWD */
+@media (min-width: 1600px) {
+  .footer_logo_pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .footer_logo_title {
+    font-size: 32px;
+  }
+
+  .footer_content_text {
+    max-width: 300px;
+    font-size: 20px;
+  }
+
+  .footer_copyright {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}

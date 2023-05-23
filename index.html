@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampHub</title>
+    <link rel="icon" href="./src/img/logo/logo-white.png" />
+
+    <link rel="stylesheet" href="./src/css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="module"
+      defer
+      src="./src/js/controller/homeController.js"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation navigation--short">
+      <button class="navigation_button">
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+        <div class="navigation_button_bar"></div>
+      </button>
+
+      <nav class="navigation_overlay">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <picture>
+              <source
+                media="(min-width:1000px)"
+                srcset="./src/img/navigation/navigation-map.jpg"
+              />
+              <source
+                media="(min-width:400px)"
+                srcset="./src/img/navigation/navigation-map.webp"
+              />
+              <img src="./src/img/navigation/navigation-map.jpg" alt="" />
+            </picture>
+          </li>
+
+          <li class="navigation_item">
+            <div class="navigation_header">
+              <div class="navigation_header_content">
+                <div class="navigation_header_content_logo">
+                  <img src="./src/img/logo/logo-black.png" alt="" />
+                </div>
+                <h2 class="navigation_header_content_title">CampHub</h2>
+              </div>
+            </div>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./index.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./src/img/navigation/navigation-home.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./src/img/navigation/navigation-home.webp"
+                />
+                <img src="./src/img/navigation/navigation-home.png" alt="" />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Home</h2>
+                <span class="navigation_link_content_text"
+                  >Welcome to CampHub</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a
+              href="./pages/campgrounds/campgrounds.html"
+              class="navigation_link"
+            >
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./src/img/navigation/navigation-rooms.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./src/img/navigation/navigation-rooms.webp"
+                />
+                <img src="./src/img/navigation/navigation-rooms.png" alt="" />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Campgrounds</h2>
+                <span class="navigation_link_content_text"
+                  >Upper Valley & Sunset Lodge</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./pages/authentication/login.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./src/img/navigation/navigation-authentication.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./src/img/navigation/navigation-authentication.webp"
+                />
+                <img
+                  src="./src/img/navigation/navigation-authentication.png"
+                  alt=""
+                />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Authentication</h2>
+                <span class="navigation_link_content_text"
+                  >Register or Sign in</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a
+              href="./pages/membership/membership.html"
+              class="navigation_link"
+            >
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./src/img/navigation/navigation-account.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./src/img/navigation/navigation-account.webp"
+                />
+                <img src="./src/img/navigation/navigation-account.png" alt="" />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Membership</h2>
+                <span class="navigation_link_content_text"
+                  >Manage your account</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="navigation_item">
+            <a href="./pages/guide.html" class="navigation_link">
+              <picture>
+                <source
+                  media="(min-width:1000px)"
+                  srcset="./src/img/navigation/navigation-guide.png"
+                />
+                <source
+                  media="(min-width:400px)"
+                  srcset="./src/img/navigation/navigation-guide.webp"
+                />
+                <img src="./src/img/navigation/navigation-guide.png" alt="" />
+              </picture>
+              <div class="navigation_link_content">
+                <h2 class="navigation_link_content_title">Guide</h2>
+                <span class="navigation_link_content_text"
+                  >Check information and FAQ</span
+                >
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header-landing">
+      <div class="landing">
+        <div class="landing_logo">
+          <div class="landing_logo_pic">
+            <img src="./src/img/logo/logo-white.png" alt="" />
+          </div>
+          <div class="landing_logo_text">
+            <h2 class="landing_logo_title">CampHub</h2>
+          </div>
+        </div>
+
+        <div class="landing_video">
+          <div class="landing_video_frame">
+            <img src="./src/img/home/landing/landing-test.png" alt="" />
+          </div>
+
+          <div class="landing_socials">
+            <a href="#" class="landing_socials_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="landing_socials_icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="landing_socials_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="landing_socials_icon">
+              <i class="fa-brands fa-line"></i>
+            </a>
+          </div>
+
+          <div class="landing_card">
+            <div class="landing_card_text">
+              Let’s see the tutorial about <a href="#">CampHub!</a>
+            </div>
+            <a href="./pages/guide.html" class="landing_card_link">
+              <div class="landing_card_link_icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="landing_card_link_text">GUIDE</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-concept">
+        <div class="concept_background-tree">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./src/img/home/concept/concept-background-1.webp"
+            />
+            <img src="./src/img/home/concept/concept-background-1.png" alt="" />
+          </picture>
+        </div>
+        <div class="concept_background-tree">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./src/img/home/concept/concept-background-1.webp"
+            />
+            <img src="./src/img/home/concept/concept-background-1.png" alt="" />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="concept">
+            <div class="concept_title">
+              <h2 class="concept_header">
+                <span>Concept</span>
+                <br />
+                Gateway to Adventure and Exploration
+                <br />
+                Journey to Unforgettable Experiences
+              </h2>
+            </div>
+            <div class="concept_content">
+              <div class="concept_content_cards">
+                <div class="concept_content_card">
+                  <header class="concept_content_card_header">
+                    <div class="concept_content_card_title">
+                      <h3
+                        class="heading_tertiary concept_content_card_text-header"
+                      >
+                        Camping With Friends
+                      </h3>
+                      <div
+                        class="concept_content_card_triangle concept_content_card_triangle--left"
+                      ></div>
+                    </div>
+                    <picture class="concept_content_card_pic">
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-1.png"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-1.webp"
+                      />
+                      <img src="./src/img/home/concept/concept-1.png" alt="" />
+                    </picture>
+                  </header>
+                  <div class="concept_content_card_body">
+                    <p class="concept_content_card_text">
+                      Unique opportunity to connect with friends, share
+                      experiences, and create lasting memories.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="concept_content_card">
+                  <header class="concept_content_card_header">
+                    <div class="concept_content_card_title">
+                      <h3
+                        class="heading_tertiary concept_content_card_text-header"
+                      >
+                        Tenting with Nature
+                      </h3>
+                      <div
+                        class="concept_content_card_triangle concept_content_card_triangle--center"
+                      ></div>
+                    </div>
+                    <picture class="concept_content_card_pic">
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-2.png"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-2.webp"
+                      />
+                      <img src="./src/img/home/concept/concept-2.png" alt="" />
+                    </picture>
+                  </header>
+                  <div class="concept_content_card_body">
+                    <p class="concept_content_card_text">
+                      Tent With Nature encourages the use of lightweight and
+                      compact gear, minimizing the carbon footprint.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="concept_content_card">
+                  <header class="concept_content_card_header">
+                    <div class="concept_content_card_title">
+                      <h3
+                        class="heading_tertiary concept_content_card_text-header"
+                      >
+                        Rent and Grill
+                      </h3>
+                      <div
+                        class="concept_content_card_triangle concept_content_card_triangle--right"
+                      ></div>
+                    </div>
+                    <picture class="concept_content_card_pic">
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-3.png"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/concept/concept-3.webp"
+                      />
+                      <img src="./src/img/home/concept/concept-3.png" alt="" />
+                    </picture>
+                  </header>
+                  <div class="concept_content_card_body">
+                    <p class="concept_content_card_text">
+                      Enhancing the camping experience by providing campers with
+                      access to reliable and well-maintained grills.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="concept_background-wave">
+          <img src="./src/img/logo/wave/wave-2.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="section-rooms">
+        <div class="rooms">
+          <div class="room">
+            <div class="room_carousel">
+              <div class="room_carousel_pics">
+                <div class="room_carousel_pics_wrapper">
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-1-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-1-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-1/room-1-1-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-2-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-2-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-1/room-1-2-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-3-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-3-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-1/room-1-3-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-4-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-4-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-1/room-1-4-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-5-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-1/room-1-5-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-1/room-1-5-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="room_carousel_slogan">
+                <div class="room_carousel_slogan_text">
+                  The <span>Mountain</span>, <br />
+                  The <span>Land</span>
+                </div>
+              </div>
+              <div class="room_carousel_bar">
+                <div class="room_carousel_bar_numbers">
+                  <div
+                    class="room_carousel_bar_number room_carousel_bar_number--active"
+                  >
+                    01
+                  </div>
+                  <div class="room_carousel_bar_number">02</div>
+                  <div class="room_carousel_bar_number">03</div>
+                  <div class="room_carousel_bar_number">04</div>
+                  <div class="room_carousel_bar_number">05</div>
+                </div>
+                <div class="room_carousel_bar_arrows">
+                  <div class="room_carousel_bar_arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+
+                  <div class="room_carousel_bar_arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="room_content">
+              <div class="room_background-text">Valley</div>
+              <div class="room_card">
+                <h2 class="room_card_title">Upper Valley</h2>
+                <div class="room_card_price">$99.99 <span>/ night</span></div>
+                <div class="room_card_features">
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/camping.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/wood.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/fire.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/barbecue.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/shower.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/pawprint.png" alt="" />
+                  </div>
+                </div>
+                <p class="room_card_text">
+                  Upper Valley is a beautiful campground that caters to tent
+                  camping and hiking, without RVs. It's surrounded by nature and
+                  offers secluded campsites with shared amenities.<br />
+                  <br />
+                  Upper Valley is a hidden gem for nature lovers seeking an
+                  intimate camping experience.
+                </p>
+                <a
+                  href="./pages/campgrounds/reservation.html"
+                  class="room_card_button"
+                  >Book Now!</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="room">
+            <div class="room_content">
+              <div class="room_background-text room_background-text--right">
+                Lodge
+              </div>
+              <div class="room_card room_card--right">
+                <h2 class="room_card_title">Sunset Lodge</h2>
+                <div class="room_card_price">$129.99 <span>/ night</span></div>
+                <div class="room_card_features">
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/camping.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/car.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/wood.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/fire.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/barbecue.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/shower.png" alt="" />
+                  </div>
+                  <div class="room_card_feature">
+                    <img src="./src/img/logo/icon/pawprint.png" alt="" />
+                  </div>
+                </div>
+                <p class="room_card_text">
+                  Sunset Lodge is a popular campground that provides
+                  accommodations for tourists in cars or RVs. It offers a range
+                  of amenities and outdoor activities, including hiking,
+                  fishing, and boating. <br />
+                  <br />
+                  Sunset Lodge is a great choice for tourists seeking a
+                  convenient camping experience in a beautiful natural setting.
+                </p>
+                <a
+                  href="./pages/campgrounds/reservation.html"
+                  class="room_card_button"
+                  >Book Now!</a
+                >
+              </div>
+            </div>
+            <div class="room_carousel">
+              <div class="room_carousel_pics room_carousel_pics--right">
+                <div class="room_carousel_pics_wrapper">
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-1-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-1-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-2/room-2-1-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-2-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-2-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-2/room-2-2-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-3-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-3-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-2/room-2-3-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-4-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-4-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-2/room-2-4-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="room_carousel_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-5-min.jpg
+                        "
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="
+                          ./src/img/campgrounds/rooms/room-2/room-2-5-min.webp
+                        "
+                      />
+                      <img
+                        src="./src/img/campgrounds/rooms/room-2/room-2-5-min.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="room_carousel_slogan room_carousel_slogan--right">
+                <div
+                  class="room_carousel_slogan_text room_carousel_slogan_text--right"
+                >
+                  Car <span>Touring</span>, <br />
+                  Car <span>Camping</span>
+                </div>
+              </div>
+              <div class="room_carousel_bar room_carousel_bar--right">
+                <div class="room_carousel_bar_numbers">
+                  <div
+                    class="room_carousel_bar_number room_carousel_bar_number--active"
+                  >
+                    01
+                  </div>
+                  <div class="room_carousel_bar_number">02</div>
+                  <div class="room_carousel_bar_number">03</div>
+                  <div class="room_carousel_bar_number">04</div>
+                  <div class="room_carousel_bar_number">05</div>
+                </div>
+                <div class="room_carousel_bar_arrows">
+                  <div class="room_carousel_bar_arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+
+                  <div class="room_carousel_bar_arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-recommend">
+        <div class="recommend_background-borders">
+          <div
+            class="recommend_background-border recommend_background-border--left"
+          >
+            <img
+              src="./src/img/home/recommend/course_curtain_l@2x.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="recommend_background-border recommend_background-border--right"
+          >
+            <img
+              src="./src/img/home/recommend/course_curtain_r@2x.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="recommend_background-map"></div>
+
+        <div class="recommend_background-car">
+          <img
+            src="./src/img/home/recommend/car-smoke.png"
+            class="recommend_background-car_smoke"
+            alt=""
+          />
+          <img src="./src/img/home/recommend/car.png" alt="" />
+        </div>
+
+        <div class="container">
+          <div class="recommend">
+            <div class="recommend_intro">
+              <div class="recommend_intro_card">
+                <div class="recommend_intro_header">
+                  <h2 class="recommend_intro_title">Recommendations</h2>
+                  <div class="recommend_intro_dashs">
+                    <div class="recommend_intro_dash"></div>
+                    <div class="recommend_intro_dash"></div>
+                    <div class="recommend_intro_dash"></div>
+                  </div>
+                </div>
+                <div class="recommend_intro_body">
+                  <h3
+                    class="recommend_intro_order recommend_intro_order--active"
+                  >
+                    <span>01</span> Take back memories with you
+                  </h3>
+
+                  <h3 class="recommend_intro_order">
+                    <span>02</span>
+                    Once a camper, always a camper!
+                  </h3>
+
+                  <h3 class="recommend_intro_order">
+                    <span>03</span>
+                    Living under the stars
+                  </h3>
+
+                  <h3 class="recommend_intro_order">
+                    <span>04</span>
+                    Rent and Grill
+                  </h3>
+
+                  <h3 class="recommend_intro_order">
+                    <span>05</span>
+                    Barbecues and Bonfires
+                  </h3>
+                </div>
+              </div>
+              <div class="recommend_intro_bottom"></div>
+            </div>
+
+            <div class="recommend_cards">
+              <div class="recommend_card">
+                <div class="recommend_card_header">
+                  <div class="recommend_card_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-1-min.jpg"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-1-min.webp"
+                      />
+                      <img
+                        src="./src/img/home/recommend/recommend-1.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="recommend_card_body">
+                  <h3 class="recommend_card_title">
+                    <span>01</span> Take back memories with you
+                  </h3>
+                  <p class="recommend_card_text">
+                    Immersing yourself in the natural surroundings, taking in
+                    the sights, sounds, and smells of the wilderness, and
+                    creating memories that will last a lifetime.
+                    <br />
+                    <br />
+                    In addition to enjoying the outdoors, be sure to respect the
+                    environment and leave no trace of your visit. This means
+                    disposing of waste properly, leaving the campsite as you
+                    found it, and being mindful of the impact you have on the
+                    natural surroundings.
+                  </p>
+                </div>
+              </div>
+
+              <div class="recommend_card">
+                <div class="recommend_card_header">
+                  <div class="recommend_card_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-2-min.jpg"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-2-min.webp"
+                      />
+                      <img
+                        src="./src/img/home/recommend/recommend-2.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="recommend_card_body">
+                  <h3 class="recommend_card_title">
+                    <span>02</span> Once a camper, always a camper!
+                  </h3>
+                  <p class="recommend_card_text">
+                    Once you have experienced the joys of camping, you will
+                    always have a love for the outdoors and a desire to continue
+                    camping throughout your life.
+                    <br />
+                    <br />
+                    Camping provides a sense of adventure, a chance to explore
+                    new places, and an opportunity to connect with others who
+                    share your love of the outdoors. The memories you create
+                    while camping will stay with you for a lifetime and may even
+                    inspire future camping trips.
+                  </p>
+                </div>
+              </div>
+
+              <div class="recommend_card">
+                <div class="recommend_card_header">
+                  <div class="recommend_card_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-3-min.jpg"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-3-min.webp"
+                      />
+                      <img
+                        src="./src/img/home/recommend/recommend-3.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="recommend_card_body">
+                  <h3 class="recommend_card_title">
+                    <span>03</span> Living under the stars
+                  </h3>
+                  <p class="recommend_card_text">
+                    Once sleeping outdoors under the stars, you will always have
+                    a love for camping and spending time in the great outdoors.
+                    <br />
+                    <br />
+                    Sleeping under the stars can be a transformative experience,
+                    allowing you to fully appreciate the vastness of the
+                    universe and the beauty of the night sky. It can also be a
+                    chance to connect with others who share your love of the
+                    outdoors, and to create memories that will last a lifetime.
+                  </p>
+                </div>
+              </div>
+
+              <div class="recommend_card">
+                <div class="recommend_card_header">
+                  <div class="recommend_card_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-4-min.jpg"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-4-min.webp"
+                      />
+                      <img
+                        src="./src/img/home/recommend/recommend-4.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="recommend_card_body">
+                  <h3 class="recommend_card_title">
+                    <span>04</span> Rent and Grill
+                  </h3>
+                  <p class="recommend_card_text">
+                    This service is particularly useful for those who are
+                    traveling light or who don't have their own camping
+                    equipment. Renting a grill allows you to cook meals over an
+                    open flame and enjoy the unique taste and experience of
+                    outdoor cooking.
+                    <br />
+                    <br />
+                    Using a grill is also a great way to connect with other
+                    campers and enjoy a meal together. It provides a central
+                    gathering place where people can share stories, swap tips,
+                    and enjoy the camaraderie of the camping experience.
+                  </p>
+                </div>
+              </div>
+
+              <div class="recommend_card">
+                <div class="recommend_card_header">
+                  <div class="recommend_card_pic">
+                    <picture>
+                      <source
+                        media="min-width:1000px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-5-min.jpg"
+                      />
+                      <source
+                        media="min-width:300px"
+                        type="image/webp"
+                        srcset="./src/img/home/recommend/recommend-5-min.webp"
+                      />
+                      <img
+                        src="./src/img/home/recommend/recommend-5.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="recommend_card_body">
+                  <h3 class="recommend_card_title">
+                    <span>05</span> Barbecues and Bonfires
+                  </h3>
+                  <p class="recommend_card_text">
+                    Barbecues and Bonfires offer opportunities to socialize with
+                    other campers, share stories, and create lasting memories.
+                    They also provide a chance to disconnect from technology and
+                    appreciate the simple pleasures of being outdoors.
+                    <br />
+                    <br />
+                    It's important to follow safety guidelines when using a
+                    barbecue or bonfire, such as using designated areas, keeping
+                    a safe distance from other campers and flammable materials,
+                    and properly extinguishing the fire when finished.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tourism">
+        <div class="container">
+          <div class="tourism">
+            <div class="header_bubble tourism_header">
+              <h2 class="tourism_header_title">Tourism</h2>
+              <div class="header_bubble_triangle"></div>
+            </div>
+            <div class="tourism_content">
+              <div class="tourism_content_cards">
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-hike.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-hike.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">Hiking</h3>
+                    <p class="tourism_content_card_content_text">
+                      Hiking provides an opportunity to explore the natural
+                      beauty of the surrounding area and get some exercise in
+                      the fresh air.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-cycle.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-cycle.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                    <div class="tourism_content_card_pic_bar-3"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">Cycling</h3>
+                    <p class="tourism_content_card_content_text">
+                      Many campgrounds offer bike trails or designated bike
+                      paths for cyclists of all ages and skill levels to enjoy.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-walk.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-walk.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">
+                      Walking in Forest
+                    </h3>
+                    <p class="tourism_content_card_content_text">
+                      Walking in the forest can also be a fun and educational
+                      activity for families, with opportunities to learn about
+                      local flora and fauna, geology, and history.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-swim.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-swim.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">Swimming</h3>
+                    <p class="tourism_content_card_content_text">
+                      Swimming can be a great way to socialize and meet other
+                      campers, with opportunities to participate in pool games
+                      or simply relax and sunbathe by the water.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-kayak.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-kayak.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                    <div class="tourism_content_card_pic_bar-3"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">Kayaking</h3>
+                    <p class="tourism_content_card_content_text">
+                      Kayaking can provide a peaceful and tranquil experience,
+                      with the opportunity to observe wildlife and enjoy the
+                      serenity of the water.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourism_content_card">
+                  <div class="tourism_content_card_header">
+                    <div class="tourism_content_card_pic">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./src/img/home/tourism/tourism-fishing.webp"
+                        />
+                        <img
+                          src="./src/img/home/tourism/tourism-fishing.jpg"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="tourism_content_card_pic_bar-1"></div>
+                    <div class="tourism_content_card_pic_bar-2"></div>
+                  </div>
+                  <div class="tourism_content_card_content">
+                    <h3 class="tourism_content_card_content_title">Fishing</h3>
+                    <p class="tourism_content_card_content_text">
+                      Fishing can provide a peaceful and meditative experience,
+                      with the opportunity to enjoy the natural surroundings and
+                      wildlife.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tourism_gallery">
+          <div class="header_bubble tourism_header">
+            <h2 class="tourism_header_title">Gallery</h2>
+            <div class="header_bubble_triangle tourism_hader_triangle"></div>
+          </div>
+
+          <div class="tourism_gallery_pics">
+            <div class="tourism_gallery_pic tourism_gallery_pic--hike-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/hike/hike-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--hike-2">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-2.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-2.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/hike/hike-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--hike-3">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-3.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/hike/hike-3.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/hike/hike-3.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--cycle-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/cycle/cycle-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--cycle-2">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-2.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-2.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/cycle/cycle-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--cycle-3">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-3.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/cycle/cycle-3.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/cycle/cycle-3.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--walk-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/walk/walk-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--walk-2">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-2.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-2.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/walk/walk-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--walk-3">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-3.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-3.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/walk/walk-3.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--walk-4">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-4.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-4.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/walk/walk-4.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--walk-5">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-5.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/walk/walk-5.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/walk/walk-5.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--swim-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/swim/swim-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/swim/swim-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/swim/swim-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--kayak-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/kayak/kayak-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--kayak-2">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-2.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-2.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/kayak/kayak-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--kayak-3">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-3.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/kayak/kayak-3.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/kayak/kayak-3.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--fishing-1">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/fishing/fishing-1.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/fishing/fishing-1.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/fishing/fishing-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <div class="tourism_gallery_pic tourism_gallery_pic--fishing-2">
+              <picture>
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="./src/img/home/tourism-gallery/fishing/fishing-2.png"
+                />
+                <source
+                  media="(min-width: 400px)"
+                  srcset="./src/img/home/tourism-gallery/fishing/fishing-2.webp"
+                />
+                <img
+                  src="./src/img/home/tourism-gallery/fishing/fishing-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-booking">
+        <div class="booking">
+          <a href="./pages/campgrounds/campgrounds.html" class="booking_button">
+            Booking the campground NOW
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_logo">
+        <div class="footer_logo_pic">
+          <img src="./src/img/logo/logo-white.png" alt="" />
+        </div>
+        <h2 class="footer_logo_title">CampHub</h2>
+      </div>
+      <div class="footer_content">
+        <span class="footer_content_text">
+          900 Jamieson Pkwy, Cambridge, ON N3C 4N6, Canada
+        </span>
+
+        <span class="footer_content_text"> camping@camphub.com </span>
+
+        <span class="footer_content_text"> 111-222-3333 </span>
+      </div>
+      <div class="footer_copyright">&#169; Camphub.com all rights reserved</div>
+    </footer>
+  </body>
+</html>
