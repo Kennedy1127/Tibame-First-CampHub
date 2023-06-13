@@ -1,0 +1,56 @@
+@import "./base.css";
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.calendar-header-month {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.calendar-header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar-header-button {
+  background-color: var(--color-green-1);
+  color: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.calendar th,
+.calendar td {
+  width: calc(100% / 7);
+  height: 30px;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 2px;
+  border: 1px solid #bbb;
+  font-size: 12px;
+}
+
+.calendar-disable {
+  color: #ccc;
+  cursor: initial;
+  pointer-events: none;
+}
+
+.calendar-enable {
+  cursor: pointer;
+}
+
+.calendar-enable.calendar-selected {
+  background-color: var(--color-green-1);
+  color: #fff;
+}

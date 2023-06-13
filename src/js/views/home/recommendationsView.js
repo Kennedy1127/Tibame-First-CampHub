@@ -1,61 +1,4 @@
 class RecommendationsView {
-  _recommendCards = document.querySelectorAll(".recommend_card");
-  _recommendIntroOrders = document.querySelectorAll(".recommend_intro_order");
-
-  _addActiveIntroOrder() {
-    this._recommendCards.forEach((card, i) =>
-      card.classList.contains("recommend_card--active")
-        ? this._recommendIntroOrders[i].classList.add(
-            "recommend_intro_order--active"
-          )
-        : ""
-    );
-  }
-
-  _removeActiveIntroOrder() {
-    this._recommendIntroOrders.forEach((order) =>
-      order.classList.contains("recommend_intro_order--active")
-        ? order.classList.remove("recommend_intro_order--active")
-        : ""
-    );
-  }
-
-  _removeActiveCard() {
-    this._recommendCards.forEach((card) =>
-      card.classList.contains("recommend_card--active")
-        ? card.classList.remove("recommend_card--active")
-        : ""
-    );
-  }
-
-  _recommendCardObservation() {
-    this._recommendCards.forEach((card) => {
-      const option = {
-        root: null,
-        threshold: 0.6,
-      };
-
-      const callback = (entries, _) => {
-        if (!entries[0].isIntersecting) return;
-        this._removeActiveCard();
-        entries[0].target.classList.add("recommend_card--active");
-        this._removeActiveIntroOrder();
-        this._addActiveIntroOrder();
-      };
-
-      const observer = new IntersectionObserver(callback, option);
-      observer.observe(card);
-    });
-  }
-
-  _clickOrderCardScroll() {
-    this._recommendIntroOrders.forEach((order, i) =>
-      order.addEventListener("click", () => {
-        this._recommendCards[i].scrollIntoView({ behavior: "smooth" });
-      })
-    );
-  }
-
   _darwCurtains() {
     const sectionRecommend = document.querySelector(".section-recommend");
 
@@ -68,7 +11,8 @@ class RecommendationsView {
 
     const option = {
       root: null,
-      rootMargin: "-300px",
+      rootMargin: "-150px",
+      // rootMargin: "0px",
       threshold: 0,
     };
 
@@ -128,7 +72,7 @@ class RecommendationsView {
     };
     const option = {
       root: null,
-      rootMargin: "-50%",
+      rootMargin: "-25%",
       threshold: 0,
     };
 
@@ -149,12 +93,57 @@ class RecommendationsView {
     galleryObserver.observe(tourismGallery);
   }
 
+  _recommendCardObservation() {
+    const cards = document.querySelectorAll(".recommend_card");
+    const introOrders = document.querySelectorAll(".recommend_intro_order");
+    const currentWindowWidth = window.innerWidth;
+
+    const removeActiveCard = () => {
+      cards.forEach((card, i) => {
+        card.classList.contains("recommend_card--active")
+          ? card.classList.remove("recommend_card--active")
+          : "";
+
+        introOrders[i].classList.contains("recommend_intro_order--active")
+          ? introOrders[i].classList.remove("recommend_intro_order--active")
+          : "";
+      });
+    };
+
+    cards.forEach((card, i) => {
+      const callback = (entries) => {
+        if (!entries[0].isIntersecting) return;
+        removeActiveCard();
+        entries[0].target.classList.add("recommend_card--active");
+        introOrders[i].classList.add("recommend_intro_order--active");
+      };
+
+      const option = {
+        root: null,
+        threshold: currentWindowWidth >= 1200 ? 0.4 : 0.8,
+      };
+
+      const observer = new IntersectionObserver(callback, option);
+      observer.observe(card);
+    });
+  }
+
+  _clickOrderCardScroll() {
+    const cards = document.querySelectorAll(".recommend_card");
+    const introOrders = document.querySelectorAll(".recommend_intro_order");
+
+    introOrders.forEach((introOrder, i) => {
+      introOrder.addEventListener("click", () => {
+        cards[i].scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  }
+
   init() {
     this._recommendCardObservation();
     this._clickOrderCardScroll();
     this._darwCurtains();
     this._removeOverflowClipOnBorders();
-    // this._changeBordersIndex();
     this._setupCarAnimation();
   }
 }

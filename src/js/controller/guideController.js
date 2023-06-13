@@ -3,7 +3,7 @@ import guideView from "../views/guide/guideView.js";
 import stepView from "../views/guide/stepView.js";
 
 const init = () => {
-  navigationView.clickMenuButton();
+  navigationView.init();
   guideView.scrollGuideStep();
   stepView.setupStepHeaders();
 };

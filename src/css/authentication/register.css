@@ -3,7 +3,8 @@
 @import "./authemtication.css";
 
 .background-authentication {
-  background: url("../../img/authentication/register-back.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../img/authentication/register-main.png");
 }
 
 .authentication_signup {
@@ -31,13 +32,18 @@
   width: 80%;
 }
 
-.authentication_button {
-  margin-top: 10px;
+.authentication_info {
+  border-bottom: none;
 }
 
-.authentication_info {
-  width: fit-content;
-  border-bottom: none;
+.authentication_button {
+  margin: 2px 0 10px;
+}
+
+@media (min-width: 1200px) {
+  .authentication_button {
+    margin: 10px 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -46,6 +52,10 @@
   }
 
   .authentication_group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .authentication_button {
+    margin: 15px 0;
   }
 }

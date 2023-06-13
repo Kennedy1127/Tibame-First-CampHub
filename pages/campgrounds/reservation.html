@@ -25,7 +25,7 @@
     <script
       type="module"
       defer
-      src="./../../src/js/controller/reservationController.js"
+      src="./../../src/js/controller/campgrounds/reservationController.js"
     ></script>
   </head>
   <body>
@@ -46,13 +46,13 @@
             <picture>
               <source
                 media="(min-width:1000px)"
-                srcset="./../../src/img/navigation/navigation-map.jpg"
+                srcset="./../../src/img/navigation/map.png"
               />
               <source
                 media="(min-width:400px)"
-                srcset="./../../src/img/navigation/navigation-map.webp"
+                srcset="./../../src/img/navigation/map.png"
               />
-              <img src="./../../src/img/navigation/navigation-map.jpg" alt="" />
+              <img src="./../../src/img/navigation/map.png" alt="map" />
             </picture>
           </li>
 
@@ -60,7 +60,10 @@
             <div class="navigation_header">
               <div class="navigation_header_content">
                 <div class="navigation_header_content_logo">
-                  <img src="./../../src/img/logo/logo-black.png" alt="" />
+                  <img
+                    src="./../../src/img/logo/logo-black.png"
+                    alt="logo-black"
+                  />
                 </div>
                 <h2 class="navigation_header_content_title">CampHub</h2>
               </div>
@@ -80,7 +83,7 @@
                 />
                 <img
                   src="./../../src/img/navigation/navigation-home.png"
-                  alt=""
+                  alt="home"
                 />
               </picture>
               <div class="navigation_link_content">
@@ -105,7 +108,7 @@
                 />
                 <img
                   src="./../../src/img/navigation/navigation-rooms.png"
-                  alt=""
+                  alt="rooms"
                 />
               </picture>
               <div class="navigation_link_content">
@@ -134,7 +137,7 @@
                 />
                 <img
                   src="./../../src/img/navigation/navigation-authentication.png"
-                  alt=""
+                  alt="authentication"
                 />
               </picture>
               <div class="navigation_link_content">
@@ -159,7 +162,7 @@
                 />
                 <img
                   src="./../../src/img/navigation/navigation-account.png"
-                  alt=""
+                  alt="account"
                 />
               </picture>
               <div class="navigation_link_content">
@@ -184,7 +187,7 @@
                 />
                 <img
                   src="./../../src/img/navigation/navigation-guide.png"
-                  alt=""
+                  alt="guide"
                 />
               </picture>
               <div class="navigation_link_content">
@@ -200,283 +203,131 @@
     </div>
 
     <header class="header-landing">
-      <div class="landing">
-        <div class="landing_pic landing_pic--1">
-          <picture>
-            <source
-              media="min-width:1000px"
-              srcset="./../../src/img/campgrounds/rooms/room-1/room-1-1-min.jpg"
-            />
-            <source
-              media="min-width:300px"
-              srcset="
-                ./../../src/img/campgrounds/rooms/room-1/room-1-1-min.webp
-              "
-            />
-            <img
-              src="./../../src/img/campgrounds/rooms/room-1/room-1-1-min.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-
-        <div class="landing_pic landing_pic--2">
-          <picture>
-            <source
-              media="min-width:1000px"
-              srcset="./../../src/img/campgrounds/rooms/room-1/room-1-2-min.jpg"
-            />
-            <source
-              media="min-width:300px"
-              srcset="
-                ./../../src/img/campgrounds/rooms/room-1/room-1-2-min.webp
-              "
-            />
-            <img
-              src="./../../src/img/campgrounds/rooms/room-1/room-1-2-min.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-
-        <div class="landing_pic landing_pic--3">
-          <picture>
-            <source
-              media="min-width:1000px"
-              srcset="./../../src/img/campgrounds/rooms/room-1/room-1-3-min.jpg"
-            />
-            <source
-              media="min-width:300px"
-              srcset="
-                ./../../src/img/campgrounds/rooms/room-1/room-1-3-min.webp
-              "
-            />
-            <img
-              src="./../../src/img/campgrounds/rooms/room-1/room-1-3-min.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-
-        <div class="landing_pic landing_pic--4">
-          <picture>
-            <source
-              media="min-width:1000px"
-              srcset="./../../src/img/campgrounds/rooms/room-1/room-1-4-min.jpg"
-            />
-            <source
-              media="min-width:300px"
-              srcset="
-                ./../../src/img/campgrounds/rooms/room-1/room-1-4-min.webp
-              "
-            />
-            <img
-              src="./../../src/img/campgrounds/rooms/room-1/room-1-4-min.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-
-        <div class="landing_pic landing_pic--5">
-          <picture>
-            <source
-              media="min-width:1000px"
-              srcset="./../../src/img/campgrounds/rooms/room-1/room-1-5-min.jpg"
-            />
-            <source
-              media="min-width:300px"
-              srcset="
-                ./../../src/img/campgrounds/rooms/room-1/room-1-5-min.webp
-              "
-            />
-            <img
-              src="./../../src/img/campgrounds/rooms/room-1/room-1-5-min.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
+      <div class="container">
+        <div class="landing"></div>
       </div>
     </header>
 
     <main>
       <section class="section-reserve">
         <div class="container">
-          <div class="reserve">
-            <div class="reserve_intro">
-              <div class="reserve_intro_header">
-                <h2 class="reserve_intro_header_title">Upper Valley</h2>
-              </div>
-              <div class="reserve_intro_content">
-                <div class="reserve_intro_content_features">
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img src="./../../src/img/logo/icon/camping.png" alt="" />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      Tent is strictly essential
-                    </span>
-                  </div>
-
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img src="./../../src/img/logo/icon/wood.png" alt="" />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      Free woods provided
-                    </span>
-                  </div>
-
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img src="./../../src/img/logo/icon/fire.png" alt="" />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      Campfire is allowed
-                    </span>
-                  </div>
-
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img
-                        src="./../../src/img/logo/icon/barbecue.png"
-                        alt=""
-                      />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      BBQ Time
-                    </span>
-                  </div>
-
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img src="./../../src/img/logo/icon/shower.png" alt="" />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      Take the shower if you need
-                    </span>
-                  </div>
-
-                  <div class="reserve_intro_content_feature">
-                    <div class="reserve_intro_content_feature_icon">
-                      <img
-                        src="./../../src/img/logo/icon/pawprint.png"
-                        alt=""
-                      />
-                    </div>
-                    <span class="reserve_intro_content_feature_text">
-                      Camping with pet
-                    </span>
-                  </div>
+          <div class="reserve row">
+            <div class="col-12 col-xl-7">
+              <div class="reserve_intro">
+                <div class="reserve_intro_header">
+                  <h2 class="reserve_intro_header_title">Upper Valley</h2>
                 </div>
+                <div class="reserve_intro_content">
+                  <div class="reserve_intro_content_features"></div>
 
-                <div class="reserve_intro_content_group">
-                  <h3 class="reserve_intro_content_group_title">
-                    <span>Camp</span>cover
-                  </h3>
-                  <p class="reserve_intro_content_group_text">
-                    <span>CAMPCOVER</span> include things like theft or damage
-                    to your camping equipment, as well as liability protection
-                    in case someone is injured on your campsite.
-                    <br />
-                    <br />
-                    <span>CAMPCOVER</span> also cover trip cancellations or
-                    interruptions due to unforeseen events, such as severe
-                    weather or illness. It's important to read the details of
-                    any camping insurance policy carefully to understand what is
-                    and isn't covered.
-                  </p>
-                </div>
-
-                <div class="reserve_intro_content_group">
-                  <h3 class="reserve_intro_content_group_title">
-                    About Campground
-                  </h3>
-                  <p class="reserve_intro_content_group_text">
-                    The campground features tent camping sites that are nestled
-                    among trees and along the banks of the Upper Ammonoosuc
-                    River.
-                    <br />
-                    <br />
-                    Upper Valley offers campers a peaceful and quiet atmosphere,
-                    as cars and RVs are not allowed in the camping area.
-                  </p>
-                </div>
-
-                <div class="reserve_intro_content_calenders">
-                  <div class="reserve_intro_content_calender">
-                    <h3 class="reserve_intro_content_calender_title">
-                      Arrive Date at <span>Upper Valley</span>
+                  <div class="reserve_intro_content_group">
+                    <h3 class="reserve_intro_content_group_title">
+                      <span>Camp</span>cover
                     </h3>
-                    <div class="reserve_intro_content_calender_content">
-                      <div id="calendarArrive"></div>
-                    </div>
+                    <p class="reserve_intro_content_group_text">
+                      <span>CAMPCOVER</span> include things like theft or damage
+                      to your camping equipment, as well as liability protection
+                      in case someone is injured on your campsite.
+                      <br />
+                      <br />
+                      <span>CAMPCOVER</span> also cover trip cancellations or
+                      interruptions due to unforeseen events, such as severe
+                      weather or illness. It's important to read the details of
+                      any camping insurance policy carefully to understand what
+                      is and isn't covered.
+                    </p>
                   </div>
 
-                  <div class="reserve_intro_content_calender">
-                    <h3 class="reserve_intro_content_calender_title">
-                      <span>Upper Valley</span> Checkout Date
+                  <div class="reserve_intro_content_group">
+                    <h3 class="reserve_intro_content_group_title">
+                      About Campground
                     </h3>
-                    <div class="reserve_intro_content_calender_content">
-                      <div id="calendarCheckout"></div>
-                    </div>
+                    <p class="reserve_intro_content_group_text">
+                      The campground features tent camping sites that are
+                      nestled among trees and along the banks of the Upper
+                      Ammonoosuc River.
+                      <br />
+                      <br />
+                      Upper Valley offers campers a peaceful and quiet
+                      atmosphere, as cars and RVs are not allowed in the camping
+                      area.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="reserve_payment">
-              <div class="reserve_payment_header">
-                <div class="reserve_payment_header_price">
-                  $99.99 <span>/ night</span>
+            <div class="col-12 col-xl-5">
+              <div class="reserve_payment">
+                <div class="reserve_payment_header">
+                  <div class="reserve_payment_header_title">Reservation</div>
+                  <div class="reserve_payment_header_price"></div>
+                  <div class="reserve_payment_header_rate"></div>
                 </div>
-                <div class="reserve_payment_header_rate">
-                  <i class="fa-solid fa-star"></i> 4.7
-                  <span>- 3091 reviews</span>
-                </div>
-              </div>
-              <div class="reserve_payment_content">
-                <div class="reserve_payment_content_order">
-                  <div class="reserve_payment_content_order_dates">
-                    <div class="reserve_payment_content_order_date">
-                      <span>Check-in</span>
-                      <span>5/21/2023</span>
-                    </div>
-                    <div class="reserve_payment_content_order_date">
-                      <span>checkout</span>
-                      <span>5/26/2023</span>
-                      <div class="reserve_payment_content_order_chevron">
+                <div class="reserve_payment_content">
+                  <div class="reserve_payment_content_order">
+                    <div class="reserve_payment_content_order_dates">
+                      <div
+                        class="reserve_payment_content_order_date reserve_payment_content_order_date--checkIn"
+                      >
+                        <span>Check-in</span>
+                        <span class="reserve_checkInDate">5/21/2023</span>
                         <i class="fa-solid fa-chevron-down"></i>
+                        <div
+                          class="reserve_payment_calendar reserve_payment_calendar--checkIn"
+                        >
+                          <h2>Choose Arrive Date</h2>
+                          <div class="checkIn myCalendar"></div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="reserve_payment_content_order_date reserve_payment_content_order_date--checkOut"
+                      >
+                        <span>checkout</span>
+                        <span class="reserve_checkOutDate">5/26/2023</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div
+                          class="reserve_payment_calendar reserve_payment_calendar--checkOut"
+                        >
+                          <h2>Choose Depart Date</h2>
+                          <div class="checkOut myCalendar"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="reserve_payment_content_order_guest">
-                    <span>Guests</span>
-                    <span>1 guest</span>
-                    <div class="reserve_payment_content_order_chevron">
-                      <i class="fa-solid fa-chevron-down"></i>
+
+                    <div class="reserve_payment_content_order_guest">
+                      <span>Guests</span>
+                      <select name="guests" id="reserve_guests">
+                        <option value="1">1 guest</option>
+                        <option value="2">2 guests</option>
+                        <option value="3">3 guests</option>
+                        <option value="4">4 guests</option>
+                      </select>
                     </div>
                   </div>
-                </div>
-                <div class="reserve_payment_content_button">
-                  <button class="reserve_payment_content_submit">
-                    Reserve
-                  </button>
-                </div>
-                <div class="reserve_payment_content_price">
-                  <div class="reserve_payment_content_price_item">
-                    <div class="reserve_payment_content_price_item_name">
-                      $99.99 x 5 nights
-                    </div>
-                    <div class="reserve_payment_content_price_item_subtotal">
-                      $499.95 USD
-                    </div>
+                  <div class="reserve_payment_content_warning"></div>
+                  <div class="reserve_payment_content_button">
+                    <button class="reserve_payment_content_submit">
+                      Reserve
+                    </button>
                   </div>
-                  <div class="reserve_payment_content_price_subtotal">
-                    <div class="reserve_payment_content_price_subtotal_text">
-                      Subtotal before taxes
+                  <div class="reserve_payment_content_price">
+                    <div class="reserve_payment_content_price_item">
+                      <div
+                        class="reserve_payment_content_price_item_name"
+                      ></div>
+                      <div
+                        class="reserve_payment_content_price_item_subtotal"
+                      ></div>
                     </div>
-                    <div class="reserve_payment_content_price_subtotal_price">
-                      $499.95 USD
+                    <div class="reserve_payment_content_price_subtotal">
+                      <div class="reserve_payment_content_price_subtotal_text">
+                        Subtotal before taxes:
+                      </div>
+                      <div class="reserve_payment_content_price_subtotal_price">
+                        $99.99 USD
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -506,132 +357,17 @@
               </p>
             </div>
 
-            <div class="rental_content">
-              <div class="rental_content_cards">
-                <div class="rental_content_card">
-                  <div class="rental_content_card_pic">
-                    <picture>
-                      <source
-                        media="(min-width:1000px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-lantern.png
-                        "
-                      />
-                      <source
-                        media="(min-width:300px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-lantern.webp
-                        "
-                      />
-                      <img
-                        src="./../../src/img/campgrounds/rental/rental-lantern.png"
-                        alt=""
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="rental_content_card_title">
-                    MOJI 500 Rechargeable Camping Lantern
-                  </h3>
-                  <p class="rental_content_card_text">
-                    The MOJI 500 Rechargeable Camping Lantern is a piece of
-                    camping gear designed to provide bright and reliable
-                    lighting while camping or in other outdoor settings.
-                    <br />
-                    <br />
-                    This lantern features a rechargeable lithium-ion battery
-                    that can provide up to 500 lumens of light for up to 22
-                    hours on a single charge.
-                  </p>
-                  <div class="rental_content_card_rent">
-                    <div class="rental_content_card_rent_price">
-                      $2.99<span>/day</span>
-                    </div>
-                    <div class="rental_content_card_rent_button">Rent</div>
-                  </div>
-                </div>
+            <div class="rental_content myCarousel">
+              <div
+                class="rental_content_cards myCarousel_slider myCarousel_slider--5-items"
+              ></div>
 
-                <div class="rental_content_card">
-                  <div class="rental_content_card_pic">
-                    <picture>
-                      <source
-                        media="(min-width:1000px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-tent.png
-                        "
-                      />
-                      <source
-                        media="(min-width:300px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-tent.webp
-                        "
-                      />
-                      <img
-                        src="./../../src/img/campgrounds/rental/rental-tent.png"
-                        alt=""
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="rental_content_card_title">
-                    UNP-300 Camping Dome Tent
-                  </h3>
-                  <p class="rental_content_card_text">
-                    The UNP-300 Camping Dome Tent is a type of camping gear
-                    designed to provide shelter and comfort while camping.
-                    <br />
-                    <br />
-                    This tent is designed to accommodate up to three people and
-                    features a dome-shaped design, which provides plenty of
-                    headroom and interior space.
-                  </p>
-                  <div class="rental_content_card_rent">
-                    <div class="rental_content_card_rent_price">
-                      $6.99<span>/day</span>
-                    </div>
-                    <div class="rental_content_card_rent_button">Rent</div>
-                  </div>
+              <div class="rental_content_arrows">
+                <div class="rental_content_arrow myCarousel_arrow">
+                  <i class="fa-solid fa-arrow-left"></i>
                 </div>
-
-                <div class="rental_content_card">
-                  <div class="rental_content_card_pic">
-                    <picture>
-                      <source
-                        media="(min-width:1000px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-sleepingbag.png
-                        "
-                      />
-                      <source
-                        media="(min-width:300px)"
-                        srcset="
-                          ./../../src/img/campgrounds/rental/rental-sleepingbag.webp
-                        "
-                      />
-                      <img
-                        src="./../../src/img/campgrounds/rental/rental-sleepingbag.png"
-                        alt=""
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="rental_content_card_title">
-                    The VENTURE 4 Lightweight Sleeping Bag
-                  </h3>
-                  <p class="rental_content_card_text">
-                    This sleeping bag is made with high-quality materials,
-                    including a durable polyester outer shell and soft flannel
-                    lining, which provides a cozy and comfortable sleeping
-                    surface.
-                    <br />
-                    <br />
-                    The sleeping bag is rated for temperatures down to 20°F
-                    (-7°C), making it suitable for use in various weather
-                    conditions.
-                  </p>
-                  <div class="rental_content_card_rent">
-                    <div class="rental_content_card_rent_price">
-                      $4.99<span>/day</span>
-                    </div>
-                    <div class="rental_content_card_rent_button">Rent</div>
-                  </div>
+                <div class="rental_content_arrow myCarousel_arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
             </div>
@@ -640,177 +376,65 @@
       </section>
 
       <section class="section-summary">
-        <div class="summary">
-          <div class="summary_products">
-            <table>
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="summary_product_pic">
-                      <picture>
-                        <source
-                          media="(min-width:1000px)"
-                          srcset="
-                            ./../../src/img/campgrounds/rooms/room-1/room-1-2-min.jpg
-                          "
-                        />
-                        <source
-                          media="min-width:300px"
-                          srcset="
-                            ./../../src/img/campgrounds/rooms/room-1/room-1-2-min.webp
-                          "
-                        />
-                        <img
-                          src="./../../src/img/campgrounds/rooms/room-1/room-1-2-min.jpg"
-                          alt=""
-                        />
-                      </picture>
-                    </div>
-                    <span>Upper Valley - 499.95 USD / 5 nights</span>
-                  </td>
-                  <td>
-                    <span>$499.95</span>
-                  </td>
-                  <td>
-                    <span>3</span>
-                  </td>
-                  <td>
-                    <span>$1499.85</span>
-                  </td>
-                  <td>
-                    <span>
-                      <i class="fa-solid fa-xmark"></i>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="summary_product_pic">
-                      <picture>
-                        <source
-                          media="(min-width:1000px)"
-                          srcset="
-                            ./../../src/img/campgrounds/rental/rental-tent.png
-                          "
-                        />
-                        <source
-                          media="min-width:300px"
-                          srcset="
-                            ./../../src/img/campgrounds/rental/rental-tent-min.png
-                          "
-                        />
-                        <img
-                          src="./../../src/img/campgrounds/rental/rental-tent.png"
-                          alt=""
-                        />
-                      </picture>
-                    </div>
-                    <span>UNP-300 Camping Dome Tent - 6.99 USD / 5 nights</span>
-                  </td>
-                  <td>
-                    <span>$34.95</span>
-                  </td>
-                  <td>
-                    <span>3</span>
-                  </td>
-                  <td>
-                    <span>$105.85</span>
-                  </td>
-                  <td>
-                    <span>
-                      <i class="fa-solid fa-xmark"></i>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="summary_product_pic">
-                      <picture>
-                        <source
-                          media="(min-width:1000px)"
-                          srcset="
-                            ./../../src/img/campgrounds/rental/rental-sleepingbag.png
-                          "
-                        />
-                        <source
-                          media="min-width:300px"
-                          srcset="
-                            ./../../src/img/campgrounds/rental/rental-sleepingbag.png
-                          "
-                        />
-                        <img
-                          src="./../../src/img/campgrounds/rental/rental-sleepingbag.png"
-                          alt=""
-                        />
-                      </picture>
-                    </div>
-                    <span
-                      >VENTURE 4 Lightweight Sleeping Bag - 4.99 USD / 5
-                      nights</span
-                    >
-                  </td>
-                  <td>
-                    <span>$24.95</span>
-                  </td>
-                  <td>
-                    <span>3</span>
-                  </td>
-                  <td>
-                    <span>$74.85</span>
-                  </td>
-                  <td>
-                    <span>
-                      <i class="fa-solid fa-xmark"></i>
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="summary_checkout">
-            <div class="summary_checkout_header">
-              <h2 class="summary_checkout_header_title">Summary</h2>
-            </div>
-            <div class="summary_checkout_body">
-              <div class="summary_checkout_body_items">
-                <div class="summary_checkout_body_item">
-                  <div class="summary_checkout_body_item_name">
-                    Upper Valley - 499.95 USD / 5 nights
-                  </div>
-                  <div class="summary_checkout_body_item_price">$1499.85</div>
+        <div class="container">
+          <div class="summary row">
+            <div class="col-12 col-xl-7">
+              <div class="summary_products">
+                <div class="summary_checkout_header">
+                  <h2 class="summary_checkout_header_title">Summary</h2>
                 </div>
-
-                <div class="summary_checkout_body_item">
-                  <div class="summary_checkout_body_item_name">
-                    UNP-300 Camping Dome Tent - 6.99 USD / 5 nights
-                  </div>
-                  <div class="summary_checkout_body_item_price">$105.85</div>
-                </div>
-
-                <div class="summary_checkout_body_item">
-                  <div class="summary_checkout_body_item_name">
-                    VENTURE 4 Lightweight Sleeping Bag - 4.99 USD / 5 nights
-                  </div>
-                  <div class="summary_checkout_body_item_price">$74.85</div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody class="summary_products_table_body"></tbody>
+                </table>
+                <a href="./checkout.html" class="summary_checkout_footer_button"
+                  >Checkout</a
+                >
+                <div
+                  class="summary_checkout_body_warning summary_checkout_body_warning--hidden"
+                >
+                  Oops! Wrong selected dates.
+                  <br />
+                  Please select correct dates of check-in and checkout.
                 </div>
               </div>
-              <div class="summary_checkout_body_total">
-                <div class="summary_checkout_body_total_text">Subtoal:</div>
-                <div class="summary_checkout_body_total_price">$1680.55</div>
-              </div>
             </div>
-            <div class="summary_checkout_footer">
-              <a href="./checkout.html" class="summary_checkout_footer_button"
-                >Checkout</a
-              >
+            <div class="col-12 col-xl-5">
+              <div class="summary_checkout">
+                <div class="summary_checkout_header">
+                  <h2 class="summary_checkout_header_title">Summary</h2>
+                </div>
+                <div class="summary_checkout_body">
+                  <div class="summary_checkout_body_items"></div>
+                  <div class="summary_checkout_body_total">
+                    <div class="summary_checkout_body_total_text">Subtoal:</div>
+                    <div class="summary_checkout_body_total_price">
+                      $0.00 USD
+                    </div>
+                  </div>
+                  <div
+                    class="summary_checkout_body_warning summary_checkout_body_warning--hidden"
+                  >
+                    Oops! Wrong selected dates.
+                    <br />
+                    Please select correct dates of check-in and checkout.
+                  </div>
+                </div>
+                <div class="summary_checkout_footer">
+                  <a
+                    href="./checkout.html"
+                    class="summary_checkout_footer_button"
+                    >Checkout</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -820,7 +444,7 @@
     <footer class="footer">
       <div class="footer_logo">
         <div class="footer_logo_pic">
-          <img src="./../../src/img/logo/logo-white.png" alt="" />
+          <img src="./../../src/img/logo/logo-white.png" alt="logo-white" />
         </div>
         <h2 class="footer_logo_title">CampHub</h2>
       </div>

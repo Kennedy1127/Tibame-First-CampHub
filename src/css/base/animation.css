@@ -57,7 +57,7 @@
 
 @keyframes drive-car {
   0% {
-    left: 0;
+    left: -30%;
   }
 
   100% {

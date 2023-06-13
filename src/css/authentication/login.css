@@ -3,35 +3,27 @@
 @import "./authemtication.css";
 
 .background-authentication {
-  background: url("../../img/authentication/login-back.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../img/authentication/login-back.png");
 }
 
 .authentication_group input {
-  width: 80%;
+  width: 85%;
 }
 
 .authentication_group_forgotpassword {
-  width: 80%;
+  width: 85%;
   display: flex;
   justify-content: flex-end;
 }
 
 .authentication_group a {
   width: fit-content;
-
-  font-size: 12px;
   font-weight: 500;
-  letter-spacing: -0.2px;
   color: var(--color-green-1);
-
   margin-top: 5px;
-  padding-bottom: 1px;
-
   position: relative;
-}
-
-.authentication_group a:hover {
-  color: var(--color-green-2);
+  font-size: 10px;
 }
 
 .authentication_group a::after {
@@ -39,18 +31,10 @@
   width: 100%;
   height: 1px;
   background-color: var(--color-green-1);
-  transform: scaleX(1);
-  transform-origin: right;
-  transition: all 0.3s;
 
   position: absolute;
   top: 100%;
   left: 0;
-}
-
-.authentication_group a:hover::after {
-  transform-origin: right;
-  transform: scaleX(0);
 }
 
 .authentication_group a i {
@@ -58,7 +42,7 @@
 }
 
 .authentication_socials {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .authentication_social {
@@ -70,28 +54,24 @@
 }
 
 .authentication_social_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 100%;
-  padding: 5px 10px;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid var(--color-grey-3);
   background-color: #fff;
-
-  font-size: 14px;
   font-weight: 400;
   color: var(--color-grey-1);
-
   cursor: pointer;
-
   position: relative;
+
+  padding: 5px;
+  font-size: 14px;
 }
 
 .authentication_social_button i {
   position: absolute;
-  left: 20px;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
 
 .authentication_social:nth-child(1) .authentication_social_button i {
@@ -106,22 +86,55 @@
   color: #1da1f2;
 }
 
-/* RWD */
-@media (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
+  .authentication_group_forgotpassword {
+    width: 70%;
+  }
+
+  .authentication_group a {
+    font-size: 12px;
+    letter-spacing: -0.2px;
+  }
+
+  .authentication_group a:hover {
+    color: var(--color-green-2);
+  }
+
+  .authentication_group a::after {
+    transform: scale(1);
+    transform-origin: right;
+    transition: all 0.3s;
+  }
+
+  .authentication_group a:hover::after {
+    transform: scale(0);
+  }
+
+  .authentication_group input {
+    width: 70%;
+  }
+
+  .authentication_social_button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
   .authentication_group a {
     font-size: 16px;
   }
 
   .authentication_socials {
-    padding-top: 40px;
+    padding-top: 25px;
   }
 
   .authentication_social {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .authentication_social_button {
-    font-size: 20px;
     padding: 8px 16px;
+    font-size: 18px;
   }
 }
