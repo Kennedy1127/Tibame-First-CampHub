@@ -116,6 +116,9 @@ class CheckoutView {
     const summaryCheckoutBodyTotalPrice = document.querySelector(
       ".summary_checkout_body_total_price"
     );
+    const summaryProductsTotalPrice = document.querySelector(
+      ".summary_products_total_price"
+    );
 
     if (data.reserveRoom && Object.keys(data.reserveRoom).length !== 0) {
       const summaryCheckoutItemRoomHtml = `
@@ -163,6 +166,9 @@ class CheckoutView {
     summaryCheckoutBodyTotalPrice.textContent = `$${(subtotal || 0).toFixed(
       2
     )} USD`;
+    summaryProductsTotalPrice.textContent = `$${(subtotal || 0).toFixed(
+      2
+    )} USD`;
   }
 
   _deleteProduct() {
@@ -173,6 +179,9 @@ class CheckoutView {
     window.addEventListener("click", (e) => {
       const summaryCheckoutBodyTotalPrice = document.querySelector(
         ".summary_checkout_body_total_price"
+      );
+      const summaryProductsTotalPrice = document.querySelector(
+        ".summary_products_total_price"
       );
 
       let subtotal = Number(
@@ -212,6 +221,7 @@ class CheckoutView {
       sessionStorage.setItem("reservePaymentData", JSON.stringify(reserveRoom));
       sessionStorage.setItem("rentalData", JSON.stringify(rentalData));
       summaryCheckoutBodyTotalPrice.textContent = `$${subtotal.toFixed(2)} USD`;
+      summaryProductsTotalPrice.textContent = `$${subtotal.toFixed(2)} USD`;
     });
   }
 

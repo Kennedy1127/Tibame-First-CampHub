@@ -231,6 +231,9 @@ class RentalView {
         const summaryCheckoutBodyTotalPrice = document.querySelector(
           ".summary_checkout_body_total_price"
         );
+        const summaryProductsTotalPrice = document.querySelector(
+          ".summary_products_total_price"
+        );
         const card = e.target.closest(".rental_content_card");
         if (!card) return;
 
@@ -378,6 +381,7 @@ class RentalView {
         summaryCheckoutBodyTotalPrice.textContent = `$${subtotal.toFixed(
           2
         )} USD`;
+        summaryProductsTotalPrice.textContent = `$${subtotal.toFixed(2)} USD`;
       })
     );
   }

@@ -188,6 +188,10 @@ class ReserveView {
       ".summary_checkout_body_total_price"
     );
 
+    const summaryProductsTotalPrice = document.querySelector(
+      ".summary_products_total_price"
+    );
+
     reservePaymentSubmitButton.addEventListener("click", () => {
       const tableRows = summaryProductsTableBody.querySelectorAll("tr");
       const checkoutItems = document.querySelectorAll(
@@ -387,6 +391,9 @@ class ReserveView {
           el.classList.add("summary_checkout_body_warning--hidden")
       );
 
+      summaryProductsTotalPrice.textContent = `$${summarySubTotal.toFixed(
+        2
+      )} USD`;
       summaryCheckoutBodyTotalPrice.textContent = `$${summarySubTotal.toFixed(
         2
       )} USD`;
