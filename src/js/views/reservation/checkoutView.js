@@ -197,7 +197,7 @@ class CheckoutView {
       const rentalData = JSON.parse(sessionStorage.getItem("rentalData"));
 
       const product = clickEl.closest("tr");
-      const indexOfRentalData = rentalData.findIndex(
+      const indexOfRentalData = rentalData?.findIndex(
         (data) => data.id === product.dataset.id
       );
 
